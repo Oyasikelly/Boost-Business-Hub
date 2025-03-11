@@ -2,6 +2,10 @@ const supabase = window.supabase.createClient(
   CONFIG.SUPABASE_URL,
   CONFIG.SUPABASE_ANON_KEY
 );
+const successMessage = document.querySelector("#msgSubmit");
+document.querySelector(".close").addEventListener("click", () => {
+  successMessage.style.display = "none";
+});
 
 document.addEventListener("DOMContentLoaded", () => {
   console.log("Supabase initialized:", supabase);
