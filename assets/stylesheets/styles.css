@@ -1654,7 +1654,7 @@ section {
 
 @media (max-width: 991px) {
   .hero {
-    background: url(../images/programming.jpg) center left;
+    background: url(../images/programming.jpg) center center;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1662,7 +1662,7 @@ section {
     font-size: 22px;
   }
   .call-to-action {
-    background: url(../images/cta-bg.html) center left;
+    background: url(../images/cta-bg.html) center center;
     background-size: cover;
     padding: 150px 60px;
     border-radius: 0px;
