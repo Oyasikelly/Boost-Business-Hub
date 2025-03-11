@@ -50,6 +50,7 @@
     />
     <!-- Main CSS File -->
     <link href="assets/stylesheets/styles.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
   </head>
 
   <body>
@@ -1510,7 +1511,7 @@
                     class="contact-form form"
                     id="ajax-contact"
                     method="post"
-                    action="/assets/phpscripts/contact.php"
+                    action="/assets/javascripts/contactform.js"
                   >
                     <div class="controls">
                       <div class="row">
@@ -1548,7 +1549,16 @@
                               type="text"
                               class="form-control"
                               name="subject"
-                              placeholder="Subject"
+                              placeholder="Service"
+                              required="required"
+                            />
+                          </div>
+                          <div class="form-group form-input-box">
+                            <input
+                              type="text"
+                              class="form-control"
+                              name="package"
+                              placeholder="Package"
                               required="required"
                             />
                           </div>
@@ -1671,7 +1681,7 @@
                   <li><a href="team.html">Team</a></li>
                   <!-- <li><a href="porfolio.html">Portfolio</a></li> -->
                   <li><a href="faq.html">FAQs</a></li>
-                  <li><a href="team.html">Team</a></li>
+                  <!-- <li><a href="team.html">Team</a></li> -->
                   <!-- <li><a href="blogs.html">Blogs</a></li> -->
                   <!-- <li><a href="blogs-details.html">Blog Details</a></li> -->
                   <!-- <li><a href="coming-soon.html">Coming Soon</a></li> -->
@@ -1758,5 +1768,7 @@
 
     <!-- Template Main JS File -->
     <script src="assets/javascripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="contact.js"></script>
   </body>
 </html>

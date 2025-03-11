@@ -1,12 +1,5 @@
 $(function () {
   "use strict";
-
-  /*  
-        Template name    : Boost Business Hub - IT Solutions & Business Services Multipurpose Responsive Website Template
-        Author           : ZRTHEMES
-        Version          : 1.0
-        File Description : contact js file of the template
-    */
   $("#ajax-contact").validator();
   $("#ajax-contact").on("submit", function (e) {
     if (!e.isDefaultPrevented()) {
