@@ -1049,7 +1049,7 @@ section {
 # Call To Action Section
 --------------------------------------------------------------*/
 .call-to-action {
-  background: url(../images/programming.jpg) center left;
+  background: url(../images/working_together.jpg) center top;
   background-size: cover;
   padding: 150px 0px;
   border-radius: 0px;
@@ -3403,7 +3403,7 @@ canvas {
 --------------------------------------------------------------*/
 
 .footer-section {
-  background: url(../images/programming.jpg) center left;
+  background: url(../images/technagers.jpg) center left;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 60px 0;
