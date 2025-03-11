@@ -579,12 +579,12 @@
         <div class="container-fluid">
           <div class="container">
             <div class="section-header">
-              <h2>Pricing Plans</h2>
+              <h2>Free vs. Premium Bootcamp (Program Tiers)</h2>
               <p>
                 Choose the plan that best suits your learning and career goals.
               </p>
             </div>
-            <div class="row">
+            <div class="row" style="justify-content: center">
               <div class="col-lg-4">
                 <div class="card text-center">
                   <div class="title">
@@ -638,7 +638,7 @@
                   >
                 </div>
               </div>
-              <div class="col-lg-4">
+              <!-- <div class="col-lg-4">
                 <div class="card text-center">
                   <div class="title">
                     <h2>Standard Bootcamp</h2>
@@ -663,8 +663,8 @@
                       <li>
                         <i class="bi bi-check-circle" aria-hidden="true"></i>
                         Certification
-                      </li>
-                      <!-- <li>
+                      </li> -->
+              <!-- <li>
                         <i class="bi bi-check-circle" aria-hidden="true"></i>
                         Free Templates
                       </li>
@@ -684,14 +684,14 @@
                         <i class="bi bi-check-circle" aria-hidden="true"></i>
                         Live Support
                       </li> -->
-                    </ul>
+              <!-- </ul>
                   </div>
                   <a
                     href="/contact.html?message=U3RhbmRhcmQgQm9vdENhbXAgKDI1MDAp"
                     >Enroll Now</a
                   >
-                </div>
-              </div>
+                </div> -->
+              <!-- </div> -->
               <div class="col-lg-4">
                 <div class="card text-center">
                   <div class="title">
@@ -1353,12 +1353,19 @@
         >
           <div class="row gy-4">
             <div class="col-lg-12">
-              <h3>Let’s Discuss Your Business Goals with Boost Business Hub</h3>
+              <h3>Application Process</h3>
               <p>
-                At Boost Business Hub, we take pride in delivering results.
-                Whether you need career support, business solutions, or project
-                guidance, our team is here to help. Got a project or need expert
-                advice? Fill out the form below, and we’ll get back to you ASAP!
+                <i class="bi bi-check-circle" aria-hidden="true"></i>
+                Fill out an online application.
+                <br />
+                <i class="bi bi-check-circle" aria-hidden="true"></i>
+                Follow the link after application submission to join our slack
+                community
+                <br />
+                <br />
+                Deadline for Free Bootcamp Applications: (30/04/2025) <br />
+                Limited slots available. We are only taking 3000 interns. Apply
+                early to secure your spot.
               </p>
               <a class="cta-btn" href="https://forms.gle/BeAdmjxNdu6vvazq8">
                 Apply Today</a
@@ -1563,6 +1570,15 @@
                           </div>
                           <div class="form-group form-input-box">
                             <input
+                              type="number"
+                              class="form-control"
+                              name="phone"
+                              placeholder="Phone number"
+                              required="required"
+                            />
+                          </div>
+                          <div class="form-group form-input-box">
+                            <input
                               type="text"
                               class="form-control"
                               name="package"
@@ -1762,6 +1778,7 @@
     <div id="preloader"></div>
 
     <!-- Vendor JS Files -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="assets/javascripts/jquery.min.js"></script>
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1776,7 +1793,6 @@
 
     <!-- Template Main JS File -->
     <script src="assets/javascripts/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
     <script src="assets/javascripts/contact.js"></script>
   </body>
 </html>
