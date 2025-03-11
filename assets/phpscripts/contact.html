@@ -1,0 +1,43 @@
+<!-- Include Supabase -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script>
+  $(function () {
+    "use strict";
+
+    console.log("Working");
+    // Initialize Supabase
+    const supabaseUrl = "https://dzbyehukqpbnqokzpecc.supabase.co";
+    const supabaseKey =
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR6YnllaHVrcXBibnFva3pwZWNjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDA3NzY5NTgsImV4cCI6MjA1NjM1Mjk1OH0.eW6P35JDAvurm8gbfIlVNEBufiRs8onufk4owgY7Y1o";
+    const supabase = supabase.createClient(supabaseUrl, supabaseKey);
+
+    $("#ajax-contact").validator();
+    $("#ajax-contact").on("submit", async function (e) {
+      e.preventDefault();
+
+      if (!e.isDefaultPrevented()) {
+        let formData = $(this).serializeArray();
+        let contactData = {};
+
+        // Convert form data to an object
+        formData.forEach((field) => {
+          contactData[field.name] = field.value;
+        });
+
+        // Insert data into Supabase
+        const { data, error } = await supabase
+          .from("contact_form")
+          .insert([contactData]);
+
+        console.log(data);
+        if (error) {
+          console.error("Error:", error);
+        } else {
+          $("#msgSubmit").removeClass("hidden");
+          $("#ajax-contact")[0].reset();
+        }
+      }
+    });
+  });
+</script>
