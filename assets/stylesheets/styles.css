@@ -458,6 +458,7 @@ img:hover {
 .header .logo img {
   max-height: 60px;
   margin-right: 6px;
+  border-radius: 15%;
 }
 
 .header.stikcy-menu {
@@ -3480,6 +3481,7 @@ canvas {
 
 .footer-logo img {
   max-width: 200px;
+  border-radius: 15%;
 }
 .footer-widget ul li,
 .footer-widget ul li a {
